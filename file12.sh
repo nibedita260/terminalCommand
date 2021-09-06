@@ -4,11 +4,11 @@ function convert_farahenite_to_celsius_viceversa
 {
 case $choice in
 1)
-read -p "enter temperature (F): degf"
+read -p "enter temperature in farhenite(F): degf"
 tc=$(( ((($degf-32) * 5)/9) ))
 echo "$degf F = $tc C";;
 2)
-read -p "enter temperature (C) : degc"
+read -p "enter temperature in celcius(C) : degc"
 tf=$(( ((9/5) * $degc) + 32 ))
 echo "degc C = $tf F";;
 *)
