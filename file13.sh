@@ -20,6 +20,6 @@ read tf
 tc=$(( ((($tf-32) * 5)/9) ))
 echo "$tf F = $tc C"
 else
-echo "Please select 1 or 2 only"
+echo "Please select 1 or 2 only otherwise it will show error"
 exit 1
 fi
