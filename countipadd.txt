@@ -1,0 +1,17 @@
+#!/usr/bin/python2
+
+infile = open("file.txt","r")
+iplist = {}  # create an empty dict
+
+for line in infile:
+    line = line.strip()   # remove newline.
+    if line: # if not a blank line.
+        iplist.setdefault(line, 0) # check for ip and add with default value of 0
+        iplist[line] += 1 # increment
+
+outfile = open("out.txt","w") #open output file
+
+for key in iplist.keys():
+    line = "%-15s = %s" % (key, iplist[key])
+    print line   # print uf desired.
+    outfile.write(line + "\n")
