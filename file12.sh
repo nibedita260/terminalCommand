@@ -1,5 +1,7 @@
 #!/bin/bash
-read -p "Enter choice, 1 for celcius and 2 for fahrenhit : " choice
+echo "convertion of farhenite to celcius or celcius to fahrehnite"
+echo "enter choice 1 for fahrenite and 2 for celcius temperature"
+read choice
 function convert_farahenite_to_celsius_viceversa
 {
 case $choice in
@@ -13,6 +15,7 @@ tf=$(( ((9/5) * $degc) + 32 ))
 echo "degc C = $tf F";;
 *)
 echo "Sorry, you have to choice between 1 or 2";
+echo "exit"
 esac
 echo $choice
 }
