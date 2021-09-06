@@ -1,7 +1,9 @@
 #!/bin/bash
+
 echo "printing integers using array"
 echo "using RANDOM here we are doing"
-echo "taken random inbuilt command"
+echo "RANDOM:0:3 gives us 3 digits number"
+
 echo $(( ( RANDOM % 10 )  + 1 ))
 num= 10
 declare -a arr
